@@ -132,24 +132,28 @@
     margin-top: -16px;
 }
 
+.pg4bg .row {
+    align-items: stretch;
+}
+
 
 .whybg {
     background: url(assets/pg3bg.png) lightgray 50% / cover no-repeat;
-    min-height: 524;
+    min-height: 524px;
     padding: 30px;
     height: auto;
 }
 
 .skillg {
     background: url(assets/Skillg.png) lightgray 50% / cover no-repeat;
-    min-height: 524;
+    min-height: 524px;
     padding: 30px;
     height: auto;
 }
 
 .tntu {
     background: url(assets/tntu.png)lightgray 50% / cover no-repeat;
-    min-height: 524;
+    min-height: 524px;
     padding: 30px;
     height: auto;
 }
@@ -183,8 +187,7 @@
 
 .slab {
     width: 100%;
-    height: auto;
-    padding: 30px;
+    height: 100%;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -198,7 +201,7 @@
     color: #FFF;
     flex: 1 1 0;
 
-    min-height: 100%;
+   min-height:300px;
 }
 
 .Learningbg {
