@@ -133,8 +133,15 @@
 }
 
 .pg4bg .row {
-    align-items: stretch;
+    display:flex;
+    flex-wrap:wrap;
 }
+
+.pg4bg .col-md-4{
+    display:flex;
+}
+
+
 
 
 .whybg {
@@ -199,7 +206,7 @@
     flex-direction: column;
     justify-content: flex-start;
     color: #FFF;
-    flex: 1 1 0;
+    flex:1;
 
    min-height:300px;
 }
@@ -211,8 +218,9 @@
 .GIF {
     background: url(assets/learning.gif) lightgray 50% / cover no-repeat;
     width: 100%;
-    height: auto;
+    height: 100%;
     object-fit: cover;
+    min-height:300px;
     display: flex;
     flex-direction: column;
 }
