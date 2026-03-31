@@ -1,4 +1,5 @@
 .hero-wrapper {
+    background: url(assets/herobg.png)
     background-size: cover;
     background-position: center;
 }
