@@ -1,18 +1,18 @@
 .hero-wrapper {
     width: 100%;
     min-height: 100vh;
-    background: url(assets/herobg.png) no-repeat center center;
+    background-image: url("assets/herobg.png");
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
     display: flex;
     flex-direction: column;
 }
 
-/* 📱 Mobile fix */
 @media (max-width: 576px) {
     .hero-wrapper {
-        background-size: contain;  
-        background-position: top;
-        min-height: 60vh;
+        min-height: 100vh; /* FORCE full screen */
     }
 }
 
