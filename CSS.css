@@ -196,7 +196,7 @@
 .gainlist,
 .tntulist {
     font-family: Inter, sans-serif;
-    font-size: clamp(14px, 2vw, 20px);
+    font-size: clamp(16px, 4vw, 20px);
     font-weight: 500;
     line-height: 1.5;
     padding-left: 20px;
