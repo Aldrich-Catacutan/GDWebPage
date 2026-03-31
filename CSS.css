@@ -1,10 +1,12 @@
 .hero-wrapper {
-    width: 100%;
-    min-height: 100vh;
-    background: url(assets/herobg.png) no-repeat center center;
     background-size: cover;
-    display: flex;
-    flex-direction: column;
+    background-position: center;
+}
+
+@media (max-width: 576px) {
+    .hero-wrapper {
+        background-position: top center; /* 👈 adjust focus */
+    }
 }
 
 .header {
