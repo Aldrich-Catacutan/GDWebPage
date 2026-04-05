@@ -1,3 +1,14 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #740818;
+}
+
+/* ================= HERO ================= */
 .hero-wrapper {
     width: 100%;
     min-height: 100vh;
@@ -8,24 +19,24 @@
 
     display: flex;
     flex-direction: column;
+
+    padding-bottom: 40px;
+    margin-bottom: clamp(20px, 3vw, 60px);
 }
 
-@media (max-width: 576px) {
-    .hero-wrapper {
-        min-height: 100vh; /* FORCE full screen */
-    }
-}
-
+/* ================= HEADER ================= */
 .header {
     background: rgba(0, 0, 0, 0.50);
 }
 
+/* ================= NAV LOGO ================= */
 .CICLOGO {
     width: 109px;
     height: 108px;
     aspect-ratio: 108/107;
 }
 
+/* ================= NAV LINKS ================= */
 .HOME,
 .CLASS,
 .LIBRARY,
@@ -43,6 +54,7 @@
     padding: 0 30px;
 }
 
+/* ================= SEARCH BAR ================= */
 .SEARCHBAR {
     height: 45px;
     padding: 11px;
@@ -60,47 +72,40 @@
     opacity: 1;
 }
 
+/* ================= HERO TEXT ================= */
 .title_head {
     display: flex;
     max-width: 663px;
     width: 100%;
-    height: auto;
     flex-direction: column;
     justify-content: center;
     color: #ffffff;
     font-family: Inter;
     font-size: 60px;
-    font-style: normal;
     font-weight: 900;
-    line-height: normal;
 }
 
 .Gain {
     width: 100%;
-    height: auto;
     color: #FFF;
     font-family: Inter;
     font-size: 35px;
-    font-style: normal;
     font-weight: 500;
-    line-height: normal;
 }
 
+/* ================= BUTTON ================= */
 .ENROLL_NOW_BUTTON {
     text-decoration: none;
     color: #4E1B1B;
     text-align: center;
     font-family: "Instrument Serif";
     font-size: 50px;
-    font-style: normal;
     font-weight: 400;
-    line-height: normal;
+
     border-radius: 100px;
     background: #FFF;
 
     border: none;
-    outline: none;
-    box-shadow: none;
 }
 
 .ENROLL_NOW_BUTTON:hover {
@@ -111,52 +116,47 @@
 .ENROLL_NOW_BUTTON:active {
     opacity: 0.8;
     transform: scale(0.97);
-    background: #FFF !important;
-    box-shadow: none !important;
 }
 
-
+/* ================= CIC TITLE ================= */
 .CIC {
     background: linear-gradient(90deg, #740818 0%, #650715 25%, #8F0015 50%, #650715 75%, #740818 100%);
     color: #FFF;
     text-align: center;
     font-family: Inter;
     font-size: 50px;
-    font-style: normal;
     font-weight: 700;
-    line-height: normal;
 }
 
+/* ================= SECTION TITLE ================= */
 .CIC1 {
     color: #FFF;
     font-family: Inter;
     font-size: 45px;
-    font-style: normal;
     font-weight: 700;
-    line-height: normal;
 }
 
+/* ================= PAGE 4 ================= */
 .pg4bg {
     background: #740818;
-    margin-top: -16px;
+    margin-bottom: clamp(20px, 3vw, 60px);
 }
 
 .pg4bg .row {
-    display:flex;
-    flex-wrap:wrap;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.pg4bg .col-md-4{
-    display:flex;
+.pg4bg .col-md-4 {
+    display: flex;
 }
 
-
+/* ================= CARDS ================= */
 .slab {
     width: 100%;
     height: 100%;
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
     border-radius: 10px;
 
     padding: 40px 30px;
@@ -165,32 +165,34 @@
     flex-direction: column;
     justify-content: flex-start;
     color: #FFF;
-    flex:1;
+    flex: 1;
 
-   min-height:300px;
+    min-height: 300px;
+}
+
+/* ================= BACKGROUND SECTIONS ================= */
+.whybg,
+.skillg,
+.tntu {
+    min-height: 524px;
+    padding: 30px;
+    margin-bottom: clamp(20px, 3vw, 60px);
+    height: auto;
 }
 
 .whybg {
     background: url(assets/pg3bg.png) lightgray 50% / cover no-repeat;
-    min-height: 524px;
-    padding: 30px;
-    height: auto;
 }
 
 .skillg {
     background: url(assets/Skillg.png) lightgray 50% / cover no-repeat;
-    min-height: 524px;
-    padding: 30px;
-    height: auto;
 }
 
 .tntu {
-    background: url(assets/tntu.png)lightgray 50% / cover no-repeat;
-    min-height: 524px;
-    padding: 30px;
-    height: auto;
+    background: url(assets/tntu.png) lightgray 50% / cover no-repeat;
 }
 
+/* ================= TITLES ================= */
 .whytitle,
 .skilltitle,
 .tntutitle {
@@ -201,6 +203,7 @@
     color: #FFF;
 }
 
+/* ================= LISTS ================= */
 .whylist,
 .gainlist,
 .tntulist {
@@ -218,10 +221,10 @@
     margin-bottom: 10px;
 }
 
-
-
+/* ================= LEARNING ================= */
 .Learningbg {
     background-color: #740818;
+    margin-bottom: clamp(20px, 3vw, 60px);
 }
 
 .GIF {
@@ -229,126 +232,105 @@
     height: auto;
 }
 
-@media (min-width: 992px){
-    .GIF{
-        height:100%;
+@media (min-width: 992px) {
+    .GIF {
+        height: 100%;
     }
 }
 
 .learningtitle {
-    display: flex;
     width: 100%;
-    flex-direction: column;
-    justify-content: center;
-    color: #FFF;
     text-align: center;
+    color: #FFF;
     font-family: Inter;
     font-size: clamp(28px, 5vw, 50px);
-    font-style: normal;
     font-weight: 700;
-    line-height: normal;
 }
 
 .learningtx {
-    display: flex;
     width: 100%;
-text-align: justify;
-    flex-direction: column;
-    justify-content: center;
+    text-align: justify;
     color: #FFF;
     font-family: Inter;
     font-size: clamp(16px, 2.5vw, 25px);
-    font-style: normal;
     font-weight: 700;
-    line-height: normal;
 }
 
+/* ================= LIBRARY ================= */
 .librarybg {
     width: 100%;
     min-height: 325px;
-    background: url(assets/librarybg.png) no-repeat center center;
-    background-size: cover;
+    background: url(assets/librarybg.png) no-repeat center/cover;
     display: flex;
     flex-direction: column;
+
+    margin-bottom: clamp(20px, 3vw, 60px);
 }
 
 .librarytitle {
     display: flex;
-    width: 100%;
-    max-width: 100%; 
-    min-height: 100px; 
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+
     color: #FFF;
     text-align: center;
     font-family: Inter, sans-serif;
-    font-size: clamp(24px, 6vw, 96px); 
+    font-size: clamp(24px, 6vw, 96px);
     font-weight: 700;
-    line-height: 1.2; 
-    margin: 0 auto; 
-    box-sizing: border-box; 
 }
 
-.footerbg{
+/* ================= FOOTER ================= */
+.footerbg {
     background: url(assets/lastbg.png) center/cover no-repeat;
     padding: 60px 0;
     color: white;
 }
 
-.footerlogo{
+.footerlogo {
     width: 200px;
     margin-bottom: 20px;
 }
 
-.schoolname{
+.schoolname {
     font-weight: 700;
     font-size: 22px;
 }
 
-.city{
+.city {
     font-size: 18px;
     margin-bottom: 20px;
 }
 
-.socials{
-    display:flex;
-    justify-content:center;
-    align-items:center; /* keeps them vertically aligned */
-    gap:20px;
-    margin-bottom:20px;
+/* ================= SOCIALS ================= */
+.socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
 }
 
-.socialicon{
-    height:auto;
+.fbicon {
+    width: clamp(70px, 7vw, 109px);
 }
 
-/* Facebook size */
-.fbicon{
-    width:clamp(70px,7vw,109px);
-    height:auto;
+.yticon {
+    width: clamp(80px, 8vw, 109px);
 }
 
-/* YouTube size but responsive */
-.yticon{
-    width:clamp(80px,8vw,109px);
-    height:auto;
+.copyright {
+    font-size: 14px;
 }
 
-.copyright{
-    font-size:14px;
+.footerright {
+    border-left: 2px solid rgba(255, 255, 255, 0.4);
+    padding-left: 40px;
 }
 
-.footerright{
-    border-left:2px solid rgba(255,255,255,0.4);
-    padding-left:40px;
+.address {
+    margin-bottom: 20px;
 }
 
-.address{
-    margin-bottom:20px;
+.footerright p {
+    margin-bottom: 10px;
 }
-
-.footerright p{
-    margin-bottom:10px;
-}
-
