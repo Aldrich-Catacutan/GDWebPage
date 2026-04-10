@@ -86,9 +86,9 @@
                         </h1>
                         <p class="lead Gain">Gain essential knowledge in game development by turning ideas into playable games using code and creativity.</p>
                         <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfdVw91ktjqtQP1bChnZG6uF1un1nbZVImnooEICD1xxeNG7Q/viewform?fbclid=IwY2xjawIDvZBleHRuA2FlbQIxMAABHVXZc8qEaRHHjioPCBklp4HnXC9PYCSx17txjhX4Wi6Apkm76ru6DAdrtw_aem_J-88D7U0HN121GeJmWncHQ">
-                                <button type="button" class="btn btn-primary btn-lg px-4 me-md-2 ENROLL_NOW_BUTTON">ENROLL NOW</button>
-                            </a>
+                            <button id="enrollBtn" type="button" class="btn btn-primary btn-lg px-4 me-md-2 ENROLL_NOW_BUTTON">
+  ENROLL NOW
+</button>
                         </div>
                     </div>
                 </div>
@@ -283,6 +283,48 @@
     </div>
   </div>
 </footer>
+
+
+
+<div id="enrollModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+
+    <h2>Enrollment Notice</h2>
+    <p>Enrollment has not started yet. Please wait for further announcements.</p>
+
+    <div class="modal-footer">
+    <a href="https://www.cic.edu.ph/" target="_blank">
+    
+      <img src="assets/CICLogo.png" class="modal-logo">
+    </a>
+
+      <a href="https://www.facebook.com/CIC.Cabanatuan" target="_blank">
+        <img src="assets/fblogo.png" class="fb-icon">
+      </a>
+    </div>
+  </div>
+</div>
+
+<script>
+  const modal = document.getElementById("enrollModal");
+  const btn = document.getElementById("enrollBtn");
+  const closeBtn = document.querySelector(".close");
+
+  btn.onclick = function() {
+    modal.style.display = "block";
+  }
+
+  closeBtn.onclick = function() {
+    modal.style.display = "none";
+  }
+
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+</script>
 
         </body>
     </html>
